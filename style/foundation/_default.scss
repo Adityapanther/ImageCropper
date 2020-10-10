@@ -5,6 +5,7 @@
     box-sizing: border-box;
     border-style: none;
     text-decoration: none;
+    outline: none;
 }
 
 .container{
@@ -17,5 +18,13 @@
 .flexVrCenter{
     display: flex;
     align-items: center;
-    
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.flexHrCenter{
+    display: flex;
+    justify-content: center;
 }

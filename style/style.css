@@ -6,6 +6,7 @@
           box-sizing: border-box;
   border-style: none;
   text-decoration: none;
+  outline: none;
 }
 
 .container {
@@ -23,6 +24,19 @@
           align-items: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.flexHrCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -31,15 +45,18 @@
 
 .wrapper .image-chooser {
   width: 40%;
-  height: 4em;
+  height: 6em;
   margin: 10px auto 0px auto;
   background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+}
+
+.wrapper .image-chooser .file-area {
+  width: 100%;
+  height: 50%;
+}
+
+.wrapper .image-chooser .submit-btn-area {
+  width: 100%;
+  height: 50%;
 }
 /*# sourceMappingURL=style.css.map */
