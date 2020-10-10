@@ -1,0 +1,21 @@
+@import './foundation/default';
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+
+
+    .image-chooser{
+        width: 40%;
+        height: 4em;
+        margin: 10px auto 0px auto;
+        background-color: red;
+       
+        #file{
+            width: 8em;
+            height: 30px;
+            margin: 0 20px;
+        }
+    }
+}
