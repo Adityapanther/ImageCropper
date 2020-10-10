@@ -1,0 +1,21 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+.flexVrCenter{
+    display: flex;
+    align-items: center;
+    
+}
