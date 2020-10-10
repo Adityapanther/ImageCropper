@@ -11,11 +11,15 @@
         height: 4em;
         margin: 10px auto 0px auto;
         background-color: red;
+        display: flex;
+        flex-flow: row nowrap;
        
-        #file{
-            width: 8em;
-            height: 30px;
-            margin: 0 20px;
+        .file-area{
+
+        }
+
+        .submit-btn-area{
+
         }
     }
 }

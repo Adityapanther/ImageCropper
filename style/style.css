@@ -34,11 +34,12 @@
   height: 4em;
   margin: 10px auto 0px auto;
   background-color: red;
-}
-
-.wrapper .image-chooser #file {
-  width: 8em;
-  height: 30px;
-  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 /*# sourceMappingURL=style.css.map */
