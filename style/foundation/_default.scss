@@ -5,17 +5,12 @@
     box-sizing: border-box;
     border-style: none;
     text-decoration: none;
+    outline: none;
 }
 
 .container{
     width: 98%;
     height: 100%;
     margin: 0 auto;
-    
-}
-
-.flexVrCenter{
-    display: flex;
-    align-items: center;
     
 }

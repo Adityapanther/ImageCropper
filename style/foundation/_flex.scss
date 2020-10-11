@@ -1,0 +1,27 @@
+@mixin flexVrCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexHrCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexVrCenterStart {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@mixin flexHrCenterStart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
