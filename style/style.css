@@ -58,4 +58,10 @@
   border-radius: 3px;
   background-color: rgba(167, 30, 172, 0.856);
 }
+
+.wrapper .image-container canvas {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
