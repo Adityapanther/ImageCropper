@@ -59,6 +59,21 @@
   background-color: rgba(167, 30, 172, 0.856);
 }
 
+.wrapper .image-container {
+  width: 100%;
+  height: auto;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .wrapper .image-container canvas {
   width: 200px;
   height: 200px;

@@ -36,6 +36,10 @@
     }
 
     .image-container{
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+        @include flexCenter();
         canvas{
             width: 200px;
             height: 200px;
