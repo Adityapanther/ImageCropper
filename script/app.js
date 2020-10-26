@@ -1,27 +1,34 @@
 const file = document.getElementById('file');
 const uploadBtn = document.getElementById('uploadBtn');
-const canvas = document.getElementById('canvas');
+var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
-let arraBf;
+let arraBf, imgElem;
 
 file.addEventListener('change', handleFile)
 
 function handleFile(){
     var firstFile = this.files[0];
     var reader = new FileReader();
-    var imgElem = document.createElement('img')
-    ctx.drawImage(reader.readAsArrayBuffer(firstFile), 0,0)
+    imgElem = document.createElement('img')
+    imgElem.width = 200;
+    imgElem.height = 200;
+    reader.onload = function(){
+        var dataSrc = reader.result;
+        imgElem.src = dataSrc;
+    }
+
+    reader.readAsDataURL(firstFile);
+    
+    
 }
 
 
 uploadBtn.addEventListener("click", ()=>{
-    ctx.drawImage(arraBf, 0,0)
+    const centerWidth = canvas.width/2;
+    const centerHeight = canvas.height/2;
+    ctx.drawImage(imgElem, centerWidth ,centerHeight)
 })
-
-
-console.log(ctx);
-console.log(canvas);
 
 // ctx.drawImage("http://localhost/imgages/smp.png", 0, 0)
 
